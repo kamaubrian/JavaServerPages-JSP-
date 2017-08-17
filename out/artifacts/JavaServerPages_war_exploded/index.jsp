@@ -17,7 +17,7 @@
                 String paranName = (String)headerNames.nextElement();
                 out.print("<tr><td>"+paranName+ "</td>\n");
                 String paramValue = request.getHeader(paranName);
-                out.print("<td"+paramValue+ "</td></tr>\n");
+                out.print("<td>"+paramValue+ "</td></tr>\n");
             }
         %>
     </table>
