@@ -32,7 +32,7 @@
         <h2>1.1 Header Response Example</h2>
         <%
             //Set Refresh, Autoload Time as 5 Seconds.
-            response.setIntHeader("Refresh",3);
+            response.setIntHeader("Refresh",1);
 
             Calendar calendar = new GregorianCalendar();
             String am_pm;
@@ -50,6 +50,11 @@
             }
 
         %>
+    </center>
+</section>
+<section id ="forms">
+    <center>
+        <h2>1.2 Handling Forms</h2>
     </center>
 </section>
 </body>
