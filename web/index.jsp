@@ -60,6 +60,7 @@
             First Name : <input type="text" name ="first_name">
         <br/>
             LastName : <input type="text" name="last_name"/>
+            <br/>
             <input type="submit" value="Submit">
         </form>
     </center>
