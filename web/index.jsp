@@ -56,17 +56,12 @@
     <%-- To effect This, change URL to http://localhost:8080/JavaServerPages_war_exploded/?first_name=Brian&last_name=kamau --%>
     <center>
         <h2>1.2 Handling Forms</h2>
-        <ul>
-            <% String first_name="Brian";
-            String last_name="Kamau";
-            %>
-            <li><p><b> First Name:</b>
-                <%=request.getParameter("first_name")%>
-            </p></li>
-            <li><p><b> Last Name:</b>
-                <%=request.getParameter("last_name")%>
-            </p></li>
-        </ul>
+        <form method="get" action="checkLogin.jsp">
+            First Name : <input type="text" name ="first_name">
+        <br/>
+            LastName : <input type="text" name="last_name"/>
+            <input type="submit" value="Submit">
+        </form>
     </center>
 </section>
 </body>
