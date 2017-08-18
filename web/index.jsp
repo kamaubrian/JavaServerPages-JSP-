@@ -21,7 +21,6 @@
                 String paramValue = request.getHeader(paranName);
                 out.print("<td>"+paramValue+ "</td></tr>\n");
             }
-
         %>
     </table>
 </center>
@@ -48,7 +47,6 @@
                 String CT = hour+":"+minute+":"+second+" "+am_pm;
                 out.println("Current Time is:" + CT+"\n");
             }
-
         %>
     </center>
 </section>
@@ -73,13 +71,8 @@
         <input type ="checkbox" name = "physics" checked="checked"/>Physics
         <input type="checkbox" name="chemistry"/>Chemistry
         <input type="submit" value="Select_Subject"/>
-
     </form>
-
     </center>
-
 </section>
 </body>
-
-
 </html>
