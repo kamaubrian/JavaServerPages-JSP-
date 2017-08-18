@@ -56,13 +56,27 @@
     <%-- To effect This, change URL to http://localhost:8080/JavaServerPages_war_exploded/?first_name=Brian&last_name=kamau --%>
     <center>
         <h2>1.2 Handling Forms</h2>
-        <form method="get" action="checkLogin.jsp">
+        <form method="post" action="checkLogin.jsp">
             First Name : <input type="text" name ="first_name">
         <br/>
             LastName : <input type="text" name="last_name"/>
             <input type="submit" value="Submit">
         </form>
     </center>
+</section>
+<section id ="subjects">
+    <center>
+    <h2>1.3 Handling CheckBoxes</h2>
+    <form action="checkLogin.jsp" method="post">
+        <input type="checkbox" name="math" checked="checked"/>Maths
+        <input type ="checkbox" name = "physics" checked="checked"/>Physics
+        <input type="checkbox" name="chemistry"/>Chemistry
+        <input type="submit" value="Select_Subject"/>
+
+    </form>
+
+    </center>
+
 </section>
 </body>
 
