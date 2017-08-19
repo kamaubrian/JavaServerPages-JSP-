@@ -128,6 +128,12 @@
 <section id="form-handling">
 <center>
     <h2>File Uploading</h2>
+    Select A File To Upload: <br/>
+    <form action="uploadFile.jsp" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" size="50"/>
+        <br/>
+        <input type ="submit" value ="Upload File"/>
+    </form>
 </center>
 </section>
 </body>
