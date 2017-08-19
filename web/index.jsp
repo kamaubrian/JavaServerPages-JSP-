@@ -74,5 +74,59 @@
     </form>
     </center>
 </section>
+<div > </div>
+<section id="sessionid">
+    <%
+        Date createTime = new Date(session.getCreationTime());
+        Date lastAccessTime = new Date(session.getLastAccessedTime());
+        String title ="Welcome Back To My Website";
+        Integer visitCount = new Integer(0);
+        String visitCountKey = new String ("visitCount");
+        String userIdKey =new String("userId");
+        String userID = new String("ABCD");
+
+        if(session.isNew()){
+            title="Welcome To My Website";
+            session.setAttribute(userIdKey,userID);
+            session.setAttribute(visitCountKey, visitCount);
+        }
+        visitCount =(Integer) session.getAttribute(visitCountKey);
+        visitCount=visitCount+1;
+        userID = (String)session.getAttribute(userIdKey);
+        session.setAttribute(visitCountKey,visitCount);
+    %>
+    <center>
+        <h2>1.4Session Tracking</h2>
+        <table border="1"align="center">
+            <tr  bgcolor="#949494">
+                <th>Session Info</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td><%out.print(session.getId());%></td>
+            </tr>
+            <tr>
+                <td>Creation Time</td>
+                <td><% out.print(createTime);%></td>
+            </tr>
+            <tr>
+                <td>Time Of Last Success</td>
+                <td><% out.print(lastAccessTime);%></td>
+            </tr>
+            <tr>
+                <td>User ID</td>
+                <td><% out.print(userID);%></td>
+            </tr>
+            <tr>
+                <td>Number of Visits</td>
+                <td><% out.print(visitCount);%></td>
+            </tr>
+        </table>
+
+
+    </center>
+
+</section>
 </body>
 </html>

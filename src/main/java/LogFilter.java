@@ -1,6 +1,5 @@
 import java.io.*;
 import javax.servlet.*;
-import javax.servlet.http.*;
 import java.util.*;
 
 public class LogFilter implements Filter{
