@@ -30,7 +30,7 @@
 
         <h2>1.1 Header Response Example</h2>
         <%
-            //Set Refresh, Autoload Time as 5 Seconds.
+            //Set Refresh, Autoload Time as 45 Seconds.
             response.setIntHeader("Refresh",45);
 
             Calendar calendar = new GregorianCalendar();
@@ -96,7 +96,7 @@
         session.setAttribute(visitCountKey,visitCount);
     %>
     <center>
-        <h2>1.4Session Tracking</h2>
+        <h2>1.4 Session Tracking</h2>
         <table border="1"align="center">
             <tr  bgcolor="#949494">
                 <th>Session Info</th>
@@ -123,10 +123,12 @@
                 <td><% out.print(visitCount);%></td>
             </tr>
         </table>
-
-
     </center>
-
+</section>
+<section id="form-handling">
+<center>
+    <h2>File Uploading</h2>
+</center>
 </section>
 </body>
 </html>
